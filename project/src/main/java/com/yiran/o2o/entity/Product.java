@@ -13,7 +13,7 @@ public class Product {
 	private Integer priority;
 	private Date createTime;
 	private Date lastEditTime;
-	private Integer enableStatue;
+	private Integer enableStatus;
 	private List<ProductImg> productImgList;
 	private ProductCategory productCategory;
 	private Shop shop;
@@ -72,11 +72,11 @@ public class Product {
 	public void setLastEditTime(Date lastEditTime) {
 		this.lastEditTime = lastEditTime;
 	}
-	public Integer getEnableStatue() {
-		return enableStatue;
+	public Integer getenableStatus() {
+		return enableStatus;
 	}
-	public void setEnableStatue(Integer enableStatue) {
-		this.enableStatue = enableStatue;
+	public void setEnableStatus(Integer enableStatus) {
+		this.enableStatus = enableStatus;
 	}
 	public List<ProductImg> getProductImgList() {
 		return productImgList;

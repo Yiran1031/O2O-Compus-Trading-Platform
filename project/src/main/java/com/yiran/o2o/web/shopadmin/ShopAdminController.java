@@ -11,4 +11,27 @@ public class ShopAdminController {
 	public String shopOperation() {
 		return "shop/shopoperation";// prefic has been setted in spring-web.xml
 	}
+	
+	@RequestMapping(value = "/shoplist")
+	public String shopList() {
+		return "shop/shoplist";// prefic has been setted in spring-web.xml
+	}
+	
+	@RequestMapping(value = "/shopmanagement")
+	public String shopManagement() {
+		return "shop/shopmanagement";// prefic has been setted in spring-web.xml
+	}
+	@RequestMapping(value = "/productcategorymanagement", method=RequestMethod.GET)
+	private String productCategoryManage() {
+		return "shop/productcategorymanagement";
+	}
+	@RequestMapping(value="/productoperation")
+	public String productOperation() {
+		return "shop/productoperation";
+	}
+	@RequestMapping(value = "/productmanagement")
+	public String productManagement() {
+		// 转发至商品管理页面
+		return "shop/productmanagement";
+	}
 }
